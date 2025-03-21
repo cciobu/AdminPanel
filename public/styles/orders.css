@@ -1,0 +1,18 @@
+/* -------------------------------- */
+/* Stiluri specifice Orders (orders.html) */
+/* -------------------------------- */
+
+/* Ajustări pentru layout-ul Comenzi pe desktop */
+.main-content > .flex.flex-col.md:flex-row.justify-between.items-center {
+    align-items: center;
+}
+
+.main-content h1 {
+    margin-right: 1rem;
+}
+
+/* Tema luminoasă */
+body.light-mode .main-content h1 {
+    color: #111827 !important;
+}
+

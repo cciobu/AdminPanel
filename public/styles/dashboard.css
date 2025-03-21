@@ -1,0 +1,55 @@
+/* -------------------------------- */
+/* Stiluri specifice Dashboard (index.html) */
+/* -------------------------------- */
+
+#particles-js + .flex > .main-content .card {
+    background: rgba(30, 41, 59, 0.9);
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    max-width: none;
+    width: 100%;
+}
+
+#particles-js + .main-content .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
+}
+
+#clientsDistributionChart {
+    max-width: 200px !important;
+    max-height: 200px !important;
+    margin: 0 auto;
+}
+
+/* Tema luminoasă */
+body.light-mode #particles-js + .flex > .main-content .card {
+    background: rgba(205, 205, 205, 0.9) !important;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    max-width: none;
+    width: 100%;
+}
+
+body.light-mode #particles-js + .main-content .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    .card {
+        padding: 1rem;
+        max-width: 100%;
+    }
+    #clientsDistributionChart {
+        max-width: 150px !important;
+        max-height: 150px !important;
+    }
+}

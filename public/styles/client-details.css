@@ -1,0 +1,201 @@
+/* -------------------------------- */
+/* Stiluri specifice Clients/Details (client-details.html) */
+/* -------------------------------- */
+
+.card {
+    background: #1e293b;
+    border: 1px solid #3b82f6;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    max-width: 400px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+    transform: none;
+}
+
+.order-item {
+    max-width: 400px !important;
+    margin-left: 0 !important;
+    margin-right: auto !important;
+    transform: none !important;
+    background: #1e293b;
+    border: 1px solid #3b82f6;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.order-item:hover {
+    transform: none !important;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.1);
+}
+
+.order-item img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: none;
+}
+
+.order-item img:hover {
+    transform: none;
+}
+
+.order-item h4 {
+    color: #ffffff;
+    font-size: 0.875rem;
+}
+
+.order-item p {
+    color: #a0aeca;
+    font-size: 0.75rem;
+}
+
+.order-item span {
+    color: #a0aeca;
+    font-size: 0.75rem;
+}
+
+.edit-order-btn, .delete-order-btn {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    font-size: 0.75rem;
+    white-space: nowrap;
+}
+
+.edit-order-btn {
+    color: #3b82f6;
+}
+
+.edit-order-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: #3b82f6;
+    color: #60a5fa;
+}
+
+.delete-order-btn {
+    color: #ef4444;
+}
+
+.delete-order-btn:hover {
+    background: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+    color: #f87171;
+}
+
+.status-active {
+    color: #10b981;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 0.375rem;
+}
+
+.status-inactive {
+    color: #ef4444;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    background: rgba(239, 68, 68, 0.1);
+    border-radius: 0.375rem;
+}
+
+/* Tema luminoasă */
+body.light-mode .card {
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: none;
+}
+
+body.light-mode .order-item {
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .order-item:hover {
+    background: #f1f5f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .order-item h4 {
+    color: #111827;
+}
+
+body.light-mode .order-item p,
+body.light-mode .order-item span {
+    color: #4b5563;
+}
+
+body.light-mode .edit-order-btn {
+    color: #2563eb;
+}
+
+body.light-mode .edit-order-btn:hover {
+    background: rgba(37, 99, 235, 0.1);
+    border-color: #2563eb;
+    color: #60a5fa;
+}
+
+body.light-mode .delete-order-btn {
+    color: #dc2626;
+}
+
+body.light-mode .delete-order-btn:hover {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: #dc2626;
+    color: #ef4444;
+}
+
+body.light-mode .status-active {
+    color: #047857;
+    background: rgba(6, 95, 70, 0.1);
+}
+
+body.light-mode .status-inactive {
+    color: #b91c1c;
+    background: rgba(185, 28, 28, 0.1);
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .order-item {
+        max-width: 100%;
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .order-item img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .order-item h4,
+    .order-item p,
+    .order-item span {
+        font-size: 0.75rem;
+    }
+}
+
